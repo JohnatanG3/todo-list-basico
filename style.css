@@ -1,0 +1,104 @@
+/* Define o estilo básico para todos os elementos */
+* {
+    padding: 0; /* Remove o padding padrão dos elementos */
+    margin: 0; /* Remove o margin padrão dos elementos */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura do elemento */
+}
+
+/* Estilo para o título principal da página */
+h1 {
+    color: #9c27b0; /* Cor do texto do título */
+    font-size: 40px; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o texto do título */
+    font-weight: bold; /* Define o texto como negrito */
+    margin-top: 40px; /* Margem superior do título */
+    margin-bottom: 20px; /* Margem inferior do título */
+}
+
+/* Estilo para o corpo da página */
+body {
+    background-color: black; /* Cor de fundo da página */
+    max-width: 400px; /* Largura máxima da página */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fonte do corpo da página */
+}
+
+/* Estilo para o contêiner do input e do botão */
+.input-container {
+    display: flex; /* Usa o layout flexbox para o contêiner */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    margin-top: 5px; /* Margem superior do contêiner */
+}
+
+/* Estilo para o campo de entrada (input) */
+input {
+    border: 2px solid #9c27b0; /* Borda sólida do input com a cor #9c27b0 */
+    outline: none; /* Remove o contorno padrão do input */
+    background-color: #333; /* Cor de fundo do input */
+    color: #eee; /* Cor do texto dentro do input */
+    width: 85%; /* Largura do input como uma porcentagem do contêiner pai */
+    font-size: 1rem; /* Tamanho da fonte dentro do input */
+    font-weight: bold; /* Define o texto como negrito */
+    border-radius: 20px 0 0 20px; /* Arredonda os cantos do input (cantos superior-esquerdo e inferior-esquerdo) */
+    height: 40px; /* Altura do input */
+    padding: 5px; /* Espaço interno dentro do input */
+    text-indent: 10px; /* Indenta o texto dentro do input para a direita */
+}
+
+/* Estilo para o botão */
+button {
+    border: none; /* Remove a borda padrão do botão */
+    height: 40px; /* Altura do botão */
+    padding: 5px 10px; /* Espaço interno dentro do botão (vertical e horizontal) */
+    font-size: 15px; /* Tamanho da fonte dentro do botão */
+    background-color: #9c27b0; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    cursor: pointer; /* Altera o cursor para uma mãozinha ao passar sobre o botão */
+    transition: 0.5s; /* Adiciona uma transição suave para mudanças de estilo */
+    border-radius: 0 20px 20px 0; /* Arredonda os cantos do botão (cantos superior-direito e inferior-direito) */
+}
+
+/* Estilo para o botão ao passar o mouse sobre ele */
+button:hover {
+    background-color: #a900c7; /* Altera a cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilo para o botão ao ser clicado */
+button:active {
+    opacity: 0.8; /* Torna o botão um pouco transparente ao ser clicado */
+}
+
+/* Estilo para a lista não ordenada */
+ul {
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+}
+
+/* Estilo para cada item da lista */
+li {
+    background-color: #4a148c; /* Cor de fundo do item da lista */
+    padding: 10px; /* Espaço interno dentro do item da lista */
+    margin: 10px auto; /* Margem superior e inferior do item da lista, centralizando horizontalmente */
+    font-size: 15px; /* Tamanho da fonte dentro do item da lista */
+    font-weight: bold; /* Define o texto como negrito */
+    color: #fff; /* Cor do texto dentro do item da lista */
+    border-radius: 20px; /* Arredonda os cantos do item da lista */
+    display: flex; /* Usa o layout flexbox para o item da lista */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Distribui o espaço entre os itens dentro do item da lista */
+}
+
+/* Estilo para o item da lista ao passar o mouse sobre ele */
+li:hover {
+    background-color: #7620df; /* Altera a cor de fundo do item da lista ao passar o mouse */
+}
+
+/* Estilo para os spans dentro do item da lista */
+span {
+    cursor: pointer; /* Altera o cursor para uma mãozinha ao passar sobre o span */
+}
+
+/* Estilo para tarefas concluídas */
+.task.done {
+    text-decoration: line-through; /* Risca o texto das tarefas concluídas */
+    color: #888; /* Cor mais clara para indicar tarefa concluída */
+}
